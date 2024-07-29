@@ -1,0 +1,95 @@
+﻿@{
+    ViewData["Title"] = "Visa";
+    Layout = "~/Views/Shared/_LayoutSender.cshtml";
+    var visaDetails = ViewData["visaDetails"] as GiftStore.Models.Projectpayment;
+}
+
+@if ((ViewData["Check"] as string) == "False")
+{
+    <div class="container-fluid pt-4 px-4">
+        <div class="card mb-3">
+            <div class="card-body align-items-center text-center">
+                @if (!string.IsNullOrEmpty(ViewData["Error"] as string))
+                {
+                    <div class="alert alert-danger" role="alert">@ViewData["Error"]</div>
+                }
+                @if (!string.IsNullOrEmpty(ViewData["Success"] as string))
+                {
+                    <div class="alert alert-success" role="alert">@ViewData["Success"]</div>
+                }
+                <hr>
+                <form action="/GiftSender/CheckPassword" method="post">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h6 class="mb-0">Password</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                            <input type="password" id="password" class="form-control" placeholder="Password" name="password">
+                        </div>
+                    </div>
+                    <hr>
+                    <button type="submit" class="btn btn_1 btn-lg">Enter Your Password</button>
+                </form>
+            </div>
+        </div>
+    </div>
+}
+else if ((ViewData["Check"] as string) == "True")
+{
+    <div class="container-fluid pt-4 px-4">
+        <div class="card mb-3">
+            <div class="card-body align-items-center text-center">
+                @if (!string.IsNullOrEmpty(ViewData["Error"] as string))
+                {
+                    <div class="alert alert-danger" role="alert">@ViewData["Error"]</div>
+                }
+                @if (!string.IsNullOrEmpty(ViewData["Success"] as string))
+                {
+                    <div class="alert alert-success" role="alert">@ViewData["Success"]</div>
+                }
+                <form action="/GiftSender/EditVisa" method="post">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h6 class="mb-0">User Name</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                            <input type="text" class="form-control" placeholder="User Name" value="@visaDetails?.User?.Username" name="username" disabled>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h6 class="mb-0">Card Number</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                            <input type="text" class="form-control" placeholder="Card Number" value="@visaDetails?.Cardnumber" name="cnumber" @(string.IsNullOrEmpty(visaDetails?.Cardnumber) ? "" : "readonly")>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h6 class="mb-0">Available Balance</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                            <input type="number" class="form-control" placeholder="Available Balance" value="@visaDetails?.Availablebalance" name="balance" @(string.IsNullOrEmpty(visaDetails?.Cardnumber) ? "" : "readonly=\"readonly\"")>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h6 class="mb-0">CVV</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                            <input type="text" class="form-control" placeholder="Card Verification Value" value="@visaDetails?.Cvvcvc" name="cvv" @(string.IsNullOrEmpty(visaDetails?.Cvvcvc) ? "" : "readonly")>
+                        </div>
+                    </div>
+                    <hr>
+                    <button type="submit" class="btn btn_1 btn-lg">Edit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+}
+
+
+

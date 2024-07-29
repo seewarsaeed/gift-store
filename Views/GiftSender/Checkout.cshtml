@@ -1,0 +1,54 @@
+﻿@model GiftStore.Models.Projectgift
+
+@{
+    ViewData["Title"] = "Checkout";
+    Layout = "~/Views/Shared/_LayoutSender.cshtml";
+}
+<form class="contact_form" method="post" asp-action="Order" asp-controller="GiftSender">
+
+    <div class="container  p-4 m-4">
+
+        <section class="checkout_area">
+            <div class="billing_details p-4">
+                <div class="row p-4">
+                    <div class="col-lg-8">
+                        <div class="order_box">
+                            <h2>Your Order</h2>
+                            <ul class="list">
+                                <li>
+                                    <a href="#">
+                                        Product
+                                        <span>Total</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        @Model?.Name
+                                        <span class="last">@Model?.Price JOD</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="row">
+                            @if (!string.IsNullOrEmpty(ViewData["Error"] as string))
+                            {
+                                <div class="col-md-12 alert alert-danger" role="alert">@ViewData["Error"]</div>
+                            }
+                            <div class="col-md-12 form-group p_star">
+                                <input type="text" class="form-control" id="first" name="address" placeholder="What address do you want to send the gift to?" />
+                            </div>
+
+                            <input type="text" class="form-control" value="@Model?.Id" name="id" hidden />
+                            <button type="submit" class="btn_3 ml-3 float-right">Checkout</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+</form>

@@ -1,0 +1,37 @@
+﻿@model IEnumerable<GiftStore.Models.Projectgift>
+
+@{
+    ViewData["Title"] = "Gifts";
+    Layout = "~/Views/Shared/_LayoutMaker.cshtml";
+ }
+
+
+<!-- product list part start-->
+<section class="product_list">
+    <div class="load_more_btn text-center">
+        <a asp-action="CreateGifts" asp-controller="GiftMaker" class="btn_3 btn_3 m-4">Add New Gift</a>
+    </div>
+    <div class="container">
+        <div class="product_list">
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="col-lg-4 col-sm-4">
+                        <div class="single_product_item">
+                            <img src="@Url.Content("~/Images/GiftImages/"+ item?.Image)" style="height: 300px;width: 250p">
+                            <h3>
+                                <a asp-action="Item" asp-controller="GiftMaker" asp-route-id=@item?.Id>
+                                    @item?.Name
+                                </a>
+                            </h3>
+                            <p>@item?.Price JOD</p>
+                        </div>
+                    </div>
+                }
+
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- product list part end-->

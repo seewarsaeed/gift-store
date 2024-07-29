@@ -1,0 +1,488 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = GiftStore
+build_property.RootNamespace = GiftStore
+build_property.ProjectDir = C:\Users\seewar saeed\Downloads\tahaluf\tahaluf\First Project\GiftStore\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\seewar saeed\Downloads\tahaluf\tahaluf\First Project\GiftStore
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Admin/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Admin/FinancialReports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRmluYW5jaWFsUmVwb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Admin/Gifts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cR2lmdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Admin/ManageWebsitePages.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTWFuYWdlV2Vic2l0ZVBhZ2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Admin/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Auth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Auth/Signup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxTaWdudXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/GiftMaker/Aboutus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lmdE1ha2VyXEFib3V0dXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/GiftMaker/Contactus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lmdE1ha2VyXENvbnRhY3R1cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/GiftMaker/CreateGifts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lmdE1ha2VyXENyZWF0ZUdpZnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/GiftMaker/EditItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lmdE1ha2VyXEVkaXRJdGVtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/GiftMaker/Gifts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lmdE1ha2VyXEdpZnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/GiftMaker/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lmdE1ha2VyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/GiftMaker/Item.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lmdE1ha2VyXEl0ZW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/GiftMaker/Notification.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lmdE1ha2VyXE5vdGlmaWNhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/GiftMaker/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lmdE1ha2VyXFByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/GiftMaker/Testimonial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lmdE1ha2VyXFRlc3RpbW9uaWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/GiftSender/Aboutus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lmdFNlbmRlclxBYm91dHVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/GiftSender/Cart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lmdFNlbmRlclxDYXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/GiftSender/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lmdFNlbmRlclxDaGVja291dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/GiftSender/Contactus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lmdFNlbmRlclxDb250YWN0dXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/GiftSender/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lmdFNlbmRlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/GiftSender/OrderIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lmdFNlbmRlclxPcmRlckluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/GiftSender/Payment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lmdFNlbmRlclxQYXltZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/GiftSender/Product.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lmdFNlbmRlclxQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/GiftSender/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lmdFNlbmRlclxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/GiftSender/SingleProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lmdFNlbmRlclxTaW5nbGVQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/GiftSender/Testimonial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lmdFNlbmRlclxUZXN0aW1vbmlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/GiftSender/Visa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lmdFNlbmRlclxWaXNhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Home/Aboutus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dHVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Home/Contactus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0dXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Home/Product.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectaboutus/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGFib3V0dXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectaboutus/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGFib3V0dXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectaboutus/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGFib3V0dXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectaboutus/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGFib3V0dXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectaboutus/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGFib3V0dXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectbackgrounds/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGJhY2tncm91bmRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectbackgrounds/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGJhY2tncm91bmRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectbackgrounds/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGJhY2tncm91bmRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectbackgrounds/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGJhY2tncm91bmRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectbackgrounds/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGJhY2tncm91bmRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectcategoryusers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGNhdGVnb3J5dXNlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectcategoryusers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGNhdGVnb3J5dXNlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectcategoryusers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGNhdGVnb3J5dXNlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectcategoryusers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGNhdGVnb3J5dXNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectcategoryusers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGNhdGVnb3J5dXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectcategory/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGNhdGVnb3J5XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectcategory/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGNhdGVnb3J5XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectcategory/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGNhdGVnb3J5XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectcategory/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGNhdGVnb3J5XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectcategory/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGNhdGVnb3J5XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectcontactus/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGNvbnRhY3R1c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectcontactus/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGNvbnRhY3R1c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectcontactus/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGNvbnRhY3R1c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectcontactus/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGNvbnRhY3R1c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectcontactus/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGNvbnRhY3R1c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectfooters/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGZvb3RlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectfooters/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGZvb3RlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectfooters/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGZvb3RlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectfooters/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGZvb3RlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectfooters/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGZvb3RlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectgifts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGdpZnRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectgifts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGdpZnRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectgifts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGdpZnRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectgifts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGdpZnRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectgifts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGdpZnRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectheaders/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGhlYWRlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectheaders/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGhlYWRlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectheaders/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGhlYWRlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectheaders/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGhlYWRlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectheaders/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGhlYWRlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projecthomes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGhvbWVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projecthomes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGhvbWVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projecthomes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGhvbWVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projecthomes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGhvbWVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projecthomes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdGhvbWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectpayments/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHBheW1lbnRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectpayments/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHBheW1lbnRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectpayments/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHBheW1lbnRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectpayments/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHBheW1lbnRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectpayments/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHBheW1lbnRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectpresents/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHByZXNlbnRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectpresents/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHByZXNlbnRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectpresents/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHByZXNlbnRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectpresents/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHByZXNlbnRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectpresents/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHByZXNlbnRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectroles/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHJvbGVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectroles/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHJvbGVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectroles/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHJvbGVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectroles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHJvbGVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectroles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHJvbGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectstatus/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHN0YXR1c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectstatus/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHN0YXR1c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectstatus/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHN0YXR1c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectstatus/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHN0YXR1c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectstatus/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHN0YXR1c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projecttestimonials/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHRlc3RpbW9uaWFsc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projecttestimonials/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHRlc3RpbW9uaWFsc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projecttestimonials/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHRlc3RpbW9uaWFsc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projecttestimonials/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHRlc3RpbW9uaWFsc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projecttestimonials/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHRlc3RpbW9uaWFsc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectusers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHVzZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectusers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHVzZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectusers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHVzZXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectusers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHVzZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Projectusers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHVzZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Shared/_LayoutHome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRIb21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Shared/_LayoutMaker.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRNYWtlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Shared/_LayoutSender.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRTZW5kZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/seewar saeed/Downloads/tahaluf/tahaluf/First Project/GiftStore/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-x50zwtc7mx

@@ -1,0 +1,141 @@
+﻿@{
+    var Home = ViewData["Home"] as GiftStore.Models.Projecthome;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@Home?.Header?.Name - @ViewBag.Title</title>
+    <script src="https://kit.fontawesome.com/3ca309fe9c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-D6lAkSjYSB8uhP0CgsZGjftj9znKv/2tSHO1+l1dBn+eeh1Tpg20MIqBMh9ImdnYEGuhYx9nFmc4ZGKwUcpCMg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="icon" href="~/HomeAssets/Logo.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/HomeAssets/css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="~/HomeAssets/css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="~/HomeAssets/css/owl.carousel.min.css">
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="~/HomeAssets/css/all.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="~/HomeAssets/css/flaticon.css">
+    <link rel="stylesheet" href="~/HomeAssets/css/themify-icons.css">
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="~/HomeAssets/css/magnific-popup.css">
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="~/HomeAssets/css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="~/HomeAssets/css/style.css">
+    <style>
+        .badge:after {
+            content: attr(value);
+            font-size: 12px;
+            color: #fff;
+            background: red;
+            border-radius: 50%;
+            padding: 0 5px;
+            position: relative;
+            left: -8px;
+            top: -10px;
+            opacity: 0.9;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!--::header part start::-->
+    <header class="main_menu home_menu">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" asp-action="Index" asp-controller="GiftMaker"> <img src="@Url.Content("~/Images/Logo/"+Home.Logo)" alt="logo" style="width: 125px;"> </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="menu_icon"><i class="fas fa-bars"></i></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-action="Index" asp-controller="GiftMaker">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-action="Aboutus" asp-controller="GiftMaker">about</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-action="Gifts" asp-controller="GiftMaker">Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-action="Testimonial" asp-controller="GiftMaker">Testimonial</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-action="Contactus" asp-controller="GiftMaker">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="hearer_icon d-flex align-items-center">
+                            <a asp-action="Notification" asp-controller="GiftMaker">
+                                <i class="fa badge fa-lg" value=@ViewData["Notification"]>&#xf07a;</i>
+                            </a>
+                            <a asp-action="Profile" asp-controller="GiftMaker"><i class="fas fa-user-cog"></i></a>
+                            <a asp-action="Logout" asp-controller="Auth">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- Header part end-->
+    <div>
+        @RenderBody()
+    </div>
+    <footer class="footer_part">
+
+        <div class="copyright_part">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-12">
+                        <div class="copyright_text">
+                            <P>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy; @Home.Footer.Copyright
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jquery plugins here-->
+    <script src="~/HomeAssets/js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="~/HomeAssets/js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="~/HomeAssets/js/bootstrap.min.js"></script>
+    <!-- magnific popup js -->
+    <script src="~/HomeAssets/js/jquery.magnific-popup.js"></script>
+    <!-- carousel js -->
+    <script src="~/HomeAssets/js/owl.carousel.min.js"></script>
+    <script src="~/HomeAssets/js/jquery.nice-select.min.js"></script>
+    <!-- slick js -->
+    <script src="~/HomeAssets/js/slick.min.js"></script>
+    <script src="~/HomeAssets/js/jquery.counterup.min.js"></script>
+    <script src="~/HomeAssets/js/waypoints.min.js"></script>
+    <script src="~/HomeAssets/js/contact.js"></script>
+    <script src="~/HomeAssets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="~/HomeAssets/js/jquery.form.js"></script>
+    <script src="~/HomeAssets/js/jquery.validate.min.js"></script>
+    <script src="~/HomeAssets/js/mail-script.js"></script>
+    <!-- custom js -->
+    <script src="~/HomeAssets/js/custom.js"></script>
+</body>
+</html>

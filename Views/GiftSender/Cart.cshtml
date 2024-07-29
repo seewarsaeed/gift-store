@@ -1,0 +1,51 @@
+﻿@model GiftStore.Models.Projectgift
+
+@{
+    ViewData["Title"] = "Cart";
+    Layout = "~/Views/Shared/_LayoutSender.cshtml";
+}
+
+
+<!--================Cart Area =================-->
+<section class="cart_area">
+    <div class="container">
+        <div class="cart_inner m-4 p-4">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Product</th>
+                            <th scope="col">Product Description</th>
+                            <th scope="col">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <td>
+                                    <div class="media">
+                                        <div class="d-flex">
+                                            <img src="@Url.Content("~/Images/GiftImages/"+ Model?.Image)" alt="" />
+                                        </div>
+                                        <div class="media-body">
+                                            <p>@Model?.Name</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h5>@Model?.Description</h5>
+                                </td>
+                                <td>
+                                    <h5>@Model?.Price JOD</h5>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+                <div class="checkout_btn_inner float-right">
+                    <a class="btn_1" asp-controller="GiftSender" asp-action="Product">Update Cart</a>
+                    <a class="btn_1 checkout_btn_1" asp-controller="GiftSender" asp-action="Checkout" asp-route-id="@Model?.Id">Proceed to checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================End Cart Area =================-->

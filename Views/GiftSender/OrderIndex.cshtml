@@ -1,0 +1,46 @@
+﻿@model List<UserPresentStatusClass>
+
+@{
+    ViewData["Title"] = "Order";
+    Layout = "~/Views/Shared/_LayoutSender.cshtml";
+}
+<div class="container-fluid p-4 section_padding">
+    <div class="bg-light rounded p-4">
+        <h6 class="mb-4">Orders Tracking - Table</h6>
+        @if (!string.IsNullOrEmpty(ViewData["Success"] as string))
+        {
+            <div class="alert alert-success" role="alert">@ViewData["Success"]</div>
+        }
+          @if (!string.IsNullOrEmpty(ViewData["Error"] as string))
+        {
+            <div class="alert alert-danger" role="alert">@ViewData["Error"]</div>
+        }
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Present Id</th>
+                    <th>Gift Name</th>
+                    <th>Receiver Address</th>
+                    <th>Request Date</th>
+                    <th>Arrived Status</th>
+                    <th>Paid Status</th>
+                    <th>Request Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item?.PresentId</td>
+                        <td>@item?.GiftName</td>
+                        <td>@item?.ReciverAddress</td>
+                        <td>@item?.RequestDate</td>
+                        <td>@item?.ArrivedStatus</td>
+                        <td>@item?.PaidStatus</td>
+                        <td>@item?.RequestStatus</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+</div>
+</div>

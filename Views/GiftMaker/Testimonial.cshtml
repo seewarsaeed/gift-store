@@ -1,0 +1,35 @@
+﻿@model GiftStore.Models.Projecttestimonial
+@{
+    ViewData["Title"] = "Testimonial";
+    Layout = "~/Views/Shared/_LayoutMaker.cshtml";
+}
+
+<div class="container-fluid pt-4 px-4 section_padding">
+    <div class="card mb-3">
+        <div class="card-body align-items-center text-center">
+            @if (!string.IsNullOrEmpty(ViewData["Error"] as string))
+            {
+                <div class="alert alert-danger" role="alert">@ViewData["Error"]</div>
+            }
+            @if (!string.IsNullOrEmpty(ViewData["Success"] as string))
+            {
+                <div class="alert alert-success" role="alert">@ViewData["Success"]</div>
+            }
+            <hr>
+            <form asp-action="Testimonial" asp-controller="GiftMaker" method="post">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h6 class="mb-0">Your Opinion Matters</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        <label for="message">Share your thoughts or feedback:</label>
+                        <textarea class="form-control w-100" asp-for="Description" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Please share your thoughts or feedback here'" placeholder="Please share your thoughts or feedback here"></textarea>
+                    </div>
+                </div>
+                <hr>
+                <button type="submit" class="btn btn_1 btn-lg">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "Aboutus";
+    Layout = "~/Views/Shared/_LayoutMaker.cshtml";
+    var Home = ViewData["Home"] as GiftStore.Models.Projecthome;
+
+}
+
+<section class="about_us">
+    <div class="container">
+        <div class="row justify-content-center p-4">
+            <div class="col-lg-9">
+                <div class="about_us_content">
+                    <h5>Our Mission</h5>
+                    <h3>@Home?.Aboutus?.Description</h3>
+                    <div class="about_us_video text-center">
+                        <img src="@Url.Content("~/Images/AboutImages/"+Home?.Aboutus?.Image)" alt="#" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

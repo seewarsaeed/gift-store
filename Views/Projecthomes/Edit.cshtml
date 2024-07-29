@@ -1,0 +1,73 @@
+﻿@model GiftStore.Models.Projecthome
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container-fluid pt-4 px-4">
+    <div class="bg-light text-center rounded p-4">
+
+        <h1>Edit</h1>
+
+        <hr />
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-4">
+                <form asp-action="Edit" enctype="multipart/form-data">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="Id" />
+                    <div class="form-group">
+                        <img src="@Url.Content("~/Images/Logo/"+ Model.Logo)" asp-append-version="true" style="width:100px;height:100px;border-radius:20%;">
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="ImageFile" class="control-label"></label>
+                        <input asp-for="ImageFile" class="form-control" />
+                        <span asp-validation-for="ImageFile" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Name" class="control-label"></label>
+                        <input asp-for="Name" class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Backgroundid" class="control-label"></label>
+                        <select asp-for="Backgroundid" class="form-control" asp-items="ViewBag.Backgroundid"></select>
+                        <span asp-validation-for="Backgroundid" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Contactusid" class="control-label"></label>
+                        <select asp-for="Contactusid" class="form-control" asp-items="ViewBag.Contactusid"></select>
+                        <span asp-validation-for="Contactusid" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Headerid" class="control-label"></label>
+                        <select asp-for="Headerid" class="form-control" asp-items="ViewBag.Headerid"></select>
+                        <span asp-validation-for="Headerid" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Aboutusid" class="control-label"></label>
+                        <select asp-for="Aboutusid" class="form-control" asp-items="ViewBag.Aboutusid"></select>
+                        <span asp-validation-for="Aboutusid" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Footerid" class="control-label"></label>
+                        <select asp-for="Footerid" class="form-control" asp-items="ViewBag.Footerid"></select>
+                        <span asp-validation-for="Footerid" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Testimonialid" class="control-label"></label>
+                        <select asp-for="Testimonialid" class="form-control" asp-items="ViewBag.Testimonialid"></select>
+                        <span asp-validation-for="Testimonialid" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Save" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div>
+            <a asp-action="ManageWebsitePages" asp-controller="Admin">Back to List</a>
+        </div>
+    </div>
+</div>
+

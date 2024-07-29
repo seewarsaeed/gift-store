@@ -1,0 +1,390 @@
+﻿@model List<GiftStore.Models.Projecthome>
+@{
+    ViewData["Title"] = "ManageWebsitePages";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var aboutus = ViewData["aboutus"] as List<GiftStore.Models.Projectaboutu>;
+    var testimonial = ViewData["testimonial"] as List<GiftStore.Models.Projecttestimonial>;
+    var contactus = ViewData["contactus"] as List<GiftStore.Models.Projectcontactu>;
+    var header = ViewData["header"] as List<GiftStore.Models.Projectheader>;
+    var footer = ViewData["footer"] as List<GiftStore.Models.Projectfooter>;
+    var background = ViewData["background"] as List<GiftStore.Models.Projectbackground>;
+
+}
+<!-- About Us & Backround Start-->
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-sm-12 col-xl-6">
+            <div class="bg-light text-center rounded p-4">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h6 class="mb-0">About Us</h6>
+                    <a asp-action="Create" asp-controller="Projectaboutus" class="btn btn-primary m-2">Add New</a>
+                </div>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>
+                                ID
+                            </th>
+                            <th>
+                                Description
+                            </th>
+                            <th>
+                                Image
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in aboutus)
+                        {
+                            <tr>
+                                <td>
+                                    @item?.Id
+                                </td>
+                                <td>
+                                    @item?.Description
+                                </td>
+                                <td>
+                                    <img src="@Url.Content("~/Images/AboutImages/"+ item?.Image)" asp-append-version="true" style="width:100px;height:100px;border-radius:20%;">
+
+                                </td>
+                                <td>
+                                    <a asp-action="Edit" asp-controller="Projectaboutus" asp-route-id="@item?.Id">Edit</a> |
+                                    <a asp-action="Details" asp-controller="Projectaboutus" asp-route-id="@item?.Id">Details</a> |
+                                    <a asp-action="Delete" asp-controller="Projectaboutus" asp-route-id="@item?.Id">Delete</a>
+                                </td>
+
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-sm-12 col-xl-6">
+            <div class="bg-light text-center rounded p-4">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h6 class="mb-0">Background</h6>
+                    <a asp-action="Create" asp-controller="Projectbackgrounds" class="btn btn-primary m-2">Add New</a>
+                </div>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>
+                                ID
+                            </th>
+                            <th>
+                                Image
+                            </th>
+                            <th>
+                                Description
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in background)
+                        {
+                            <tr>
+                                <td>
+                                    @item?.Id
+                                </td>
+                                <td>
+                                    <img src="@Url.Content("~/Images/BackgroundImages/"+ item?.Image)" asp-append-version="true" style="width:100px;height:100px;border-radius:20%;">
+
+                                </td>
+                                <td>
+                                    @item?.Description
+                                </td>
+                                <td>
+                                    <a asp-action="Edit" asp-controller="Projectbackgrounds" asp-route-id="@item?.Id">Edit</a> |
+                                    <a asp-action="Details" asp-controller="Projectbackgrounds" asp-route-id="@item?.Id">Details</a> |
+                                    <a asp-action="Delete" asp-controller="Projectbackgrounds" asp-route-id="@item?.Id">Delete</a>
+                                </td>
+
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About Us & Background End-->
+<!-- Contact Us Start-->
+<div class="container-fluid pt-4 px-4">
+    <div class="bg-light text-center rounded p-4">
+        <div class="d-flex align-items-center justify-content-between mb-4">
+            <h6 class="mb-0">Contact Us</h6>
+            <a asp-action="Create" asp-controller="Projectcontactus" class="btn btn-primary m-2">Add New</a>
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>
+                        ID
+                    </th>
+                    <th>
+                        Email
+                    </th>
+                    <th>
+                        Pohnoe number
+                    </th>
+                    <th>
+                        Address
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in contactus)
+                {
+                    <tr>
+                        <td>
+                            @item?.Id
+                        </td>
+                        <td>
+                            @item?.Email
+
+                        </td>
+                        <td>
+                            @item?.Pnumber
+                        </td>
+                        <td>
+                            @item?.Address
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-controller="Projectcontactus" asp-route-id="@item?.Id">Edit</a> |
+                            <a asp-action="Details" asp-controller="Projectcontactus" asp-route-id="@item?.Id">Details</a> |
+                            <a asp-action="Delete" asp-controller="Projectcontactus" asp-route-id="@item?.Id">Delete</a>
+                        </td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>
+<!-- contact Us End-->
+<!-- Testimonial Start-->
+<div class="container-fluid pt-4 px-4">
+    <div class="bg-light text-center rounded p-4">
+        <div class="d-flex align-items-center justify-content-between mb-4">
+            <h6 class="mb-0">
+                Testimonial
+            </h6>
+            <a asp-action="Create" asp-controller="Projecttestimonials" class="btn btn-primary m-2">Add New</a>
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>
+                        ID
+                    </th>
+                    <th>
+                        Username
+                    </th>
+                    <th>
+                        Description
+                    </th>
+                    <th>
+                        Status
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in testimonial)
+                {
+                    <tr>
+                        <td>
+                            @item?.Id
+                        </td>
+                        <td>
+                            @item?.User?.Username
+
+                        </td>
+                        <td>
+                            @item?.Description
+                        </td>
+                        <td>
+                            @item?.Satatus
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-controller="Projecttestimonials" asp-route-id="@item?.Id">Edit</a> |
+                            <a asp-action="Details" asp-controller="Projecttestimonials" asp-route-id="@item?.Id">Details</a> |
+                            <a asp-action="Delete" asp-controller="Projecttestimonials" asp-route-id="@item?.Id">Delete</a>
+                        </td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>
+<!-- Tisteminoal End-->
+<!-- Footer & Header Start-->
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-sm-12 col-xl-6">
+            <div class="bg-light text-center rounded p-4">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h6 class="mb-0">Header</h6>
+                    <a asp-action="Create" asp-controller="Projectheaders" class="btn btn-primary m-2">Add New</a>
+                </div>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>
+                                ID
+                            </th>
+                            <th>
+                                Website Name
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in header)
+                        {
+                            <tr>
+                                <td>
+                                    @item?.Id
+                                </td>
+                                <td>
+                                    @item?.Name
+                                </td>
+                                <td>
+                                    <a asp-action="Edit" asp-controller="Projectheaders" asp-route-id="@item?.Id">Edit</a> |
+                                    <a asp-action="Details" asp-controller="Projectheaders" asp-route-id="@item?.Id">Details</a> |
+                                    <a asp-action="Delete" asp-controller="Projectheaders" asp-route-id="@item?.Id">Delete</a>
+                                </td>
+
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-sm-12 col-xl-6">
+            <div class="bg-light text-center rounded p-4">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h6 class="mb-0">Footer</h6>
+                    <a asp-action="Create" asp-controller="Projectfooters" class="btn btn-primary m-2">Add New</a>
+                </div>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>
+                                ID
+                            </th>
+                            <th>
+                                Copyright
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in footer)
+                        {
+                            <tr>
+                                <td>
+                                    @item?.Id
+                                </td>
+                                <td>
+                                    @item?.Copyright
+
+                                </td>
+                                <td>
+                                    <a asp-action="Edit" asp-controller="Projectfooters" asp-route-id="@item?.Id">Edit</a> |
+                                    <a asp-action="Details" asp-controller="Projectfooters" asp-route-id="@item?.Id">Details</a> |
+                                    <a asp-action="Delete" asp-controller="Projectfooters" asp-route-id="@item?.Id">Delete</a>
+                                </td>
+
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer & Header End-->
+<!-- Home Start-->
+<div class="container-fluid pt-4 px-4">
+    <div class="bg-light text-center rounded p-4">
+        <div class="d-flex align-items-center justify-content-between mb-4">
+            <h6 class="mb-0">
+                Home
+            </h6>
+            <a asp-action="Create" asp-controller="Projecthomes" class="btn btn-primary m-2">Add New</a>
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                       Logo
+                    </th>
+                    <th>
+                        Background
+                    </th>
+                    <th>
+                        Footer
+                    </th>
+                    <th>
+                        Header
+                    </th>
+                    <th>
+                        Contact Us
+                    </th>
+                    <th>
+                        About Us
+                    </th>
+                    <th>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @item.Name
+                        </td>
+                        <td>
+                            <img src="@Url.Content("~/Images/Logo/"+ item.Logo)" asp-append-version="true" style="width:100px;height:100px;border-radius:20%;">
+
+                        </td>
+                        <td>
+                            @item?.Backgroundid
+                        </td>
+                        <td>
+                            @item?.Footerid
+                        </td>
+                        <td>
+                            @item?.Headerid
+                        </td>
+                        <td>
+                            @item?.Contactusid
+                        </td>
+                        <td>
+                            @item?.Aboutusid
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-controller="Projecthomes" asp-route-id="@item?.Id">Edit</a> |
+                            <a asp-action="Details" asp-controller="Projecthomes" asp-route-id="@item?.Id">Details</a> |
+                            <a asp-action="Delete" asp-controller="Projecthomes" asp-route-id="@item?.Id">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>
+<!-- Home End-->

@@ -1,0 +1,39 @@
+﻿@model GiftStore.Models.Projecttestimonial
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container-fluid pt-4 px-4">
+    <div class="bg-light text-center rounded p-4">
+        <h1>Details</h1>
+
+        <div>
+            <hr />
+            <dl class="row align-items-center justify-content-center">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Satatus)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Satatus)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Description)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Description)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.User)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.User.Username)
+                </dd>
+            </dl>
+        </div>
+        <div>
+            <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+            <a asp-action="ManageWebsitePages" asp-controller="Admin">Back to List</a>
+        </div>
+    </div>
+</div>

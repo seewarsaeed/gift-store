@@ -1,0 +1,60 @@
+﻿@model IEnumerable<GiftStore.Models.Projectstatus>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Arrivedstatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Paidstatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Requeststatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Notifecationstatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Present)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Arrivedstatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Paidstatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Requeststatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Notifecationstatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Present.Id)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

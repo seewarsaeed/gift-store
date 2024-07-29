@@ -1,0 +1,84 @@
+﻿@model List<Reports>
+
+@{
+    ViewData["Title"] = "FinancialReports";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid pt-4 px-4">
+    <div class="bg-light rounded p-4">
+        <h6 class="mb-4">Financial Reports - Table</h6>
+        <form asp-action="FinancialReports">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="d-flex align-items-center justify-content-between mb-4">
+
+                <div class="form-group">
+                    <input id="startDate" name="startDate" type="date" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <input id="endDate" name="endDate" type="date" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Search" class="btn btn-primary" />
+                </div>
+            </div>
+        </form>
+        <div class="table-responsive">
+            <table class="table text-start align-middle table-bordered table-striped mb-0 example">
+                <thead>
+                    <tr class="text-dark">
+                        <th>Gift Name</th>
+                        <th>Gift Sender</th>
+                        <th>Price</th>
+                        <th>Date</th>
+                        <th>Profits</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item?.GiftName</td>
+                            <td>@item?.Username</td>
+                            <td>@item?.Price</td>
+                            <td>@item?.RequestDate</td>
+                            <td>@item?.Profits</td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- Chart container -->
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+
+        <div class="col-sm-12 col-xl-6">
+            <div class="bg-light rounded h-100 p-4">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h6 class="mb-4">Monthly Profits Report</h6>
+                    <div class="mt-4">
+                        <a id="download-pdf-btn" class="btn btn-primary">Download PDF</a>
+                    </div>
+                </div>
+                <canvas id="bar-chart-monthly"></canvas>
+            </div>
+        </div>
+        <div class="col-sm-12 col-xl-6">
+
+            <div class="bg-light rounded h-100 p-4">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h6 class="mb-4">Annual Profits Report</h6>
+                    <div class="mt-4">
+                        <a id="download-pdf-btn-annual" class="btn btn-primary">Download PDF</a>
+                    </div>
+                </div>
+                <canvas id="bar-chart-annual"></canvas>
+            </div>
+        </div>
+    </div>
+
+</div>

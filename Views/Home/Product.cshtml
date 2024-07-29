@@ -1,0 +1,66 @@
+﻿@model IEnumerable<GiftStore.Models.Projectgift>
+@{
+    ViewData["Title"] = "Product";
+    Layout = "~/Views/Shared/_LayoutHome.cshtml";
+    var Home = ViewData["Home"] as GiftStore.Models.Projecthome;
+    var categories = ViewData["category"] as List<GiftStore.Models.Projectcategory>;
+}
+
+<!-- product list part start-->
+<section class="product_list section_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="product_sidebar">
+                    <div class="single_sedebar">
+                        <form asp-action="Product" asp-controller="Home">
+                            <input type="text" name="gift" placeholder="Search">
+                            <i class="ti-search"></i>
+                        </form>
+                    </div>
+                    <div class="single_sedebar">
+                        <div class="select_option">
+                            <div class="select_option_list">Category <i class="right fas fa-caret-down"></i> </div>
+                            <div class="select_option_dropdown">
+                                @foreach (var item in categories)
+                                {
+                                    <p><a asp-action="Product" asp-controller="Home" asp-route-id="@item?.Id">@item.Name</a></p>
+
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="product_list">
+                    <div class="row">
+                        @if (Model.Any())
+                        {
+                            @foreach (var item in Model)
+                            {
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="single_product_item">
+                                        <img src="@Url.Content("~/Images/GiftImages/"+ item?.Image)" class="img-fluid" style="height: 300px;width: 250p">
+                                        <h3>
+                                            <a>
+                                                @item?.Name
+                                            </a>
+                                        </h3>
+                                        <p>@item?.Price JOD</p>
+                                    </div>
+                                </div>
+                            }
+                        }
+                        else
+                        {
+                            <p>No gifts found</p>
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- product list part end-->

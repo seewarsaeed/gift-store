@@ -1,0 +1,31 @@
+﻿@model GiftStore.Models.Projectpresent
+
+
+@{
+    ViewData["Title"] = "Payment";
+    Layout = "~/Views/Shared/_LayoutSender.cshtml";
+}
+
+<div class="container">
+    <div class="order_box p-4 m-4">
+        <h2>Your Order</h2>
+  
+        <ul class="list">
+            <li>
+                <a>
+                    Product
+                    <span>Total</span>
+                </a>
+            </li>
+            <li>
+                <a>
+                    @Model.Gifts?.Name
+                    <span class="last">@Model.Gifts?.Price JOD</span>
+                </a>
+            </li>
+        </ul>
+        <a class="btn_3 m-4" asp-action="pay" asp-controller="GiftSender" asp-route-id="@Model?.Id">Proceed to Pay</a>
+        <a class="btn_3 m-4" asp-action="Cancel" asp-controller="GiftSender" asp-route-id="@Model?.Id">Proceed to Cancel Your Order</a>
+    </div>
+</div>
+

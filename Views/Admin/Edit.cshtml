@@ -1,0 +1,121 @@
+﻿@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var user = ViewData["user"] as GiftStore.Models.Projectuser;
+
+}
+
+
+<form asp-controller="Admin" asp-action="Edit" enctype="multipart/form-data">
+<div class="container-fluid pt-4 px-4">
+
+    <div class="card">
+        <div class="card-body">
+            <div class="d-flex flex-column align-items-center text-center">
+                <img src="@Url.Content("~/Images/UserImages/"+ user?.Image)" alt="Admin" class="rounded-circle" width="150">
+                <div class="mt-3">
+                        <input type="file" name="ImageFile" class="form-control">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card mb-3">
+        <div class="card-body align-items-center text-center">
+                @if (!string.IsNullOrEmpty(ViewData["Error"] as string))
+                {
+                    <div class="alert alert-danger" role="alert">@ViewData["Error"]</div>
+                }
+                @if (!string.IsNullOrEmpty(ViewData["Success"] as string))
+                {
+                    <div class="alert alert-success" role="alert">@ViewData["Success"]</div>
+                }
+            <div class="row">
+                <div class="col-sm-3">
+                    <h6 class="mb-0">User Name</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                    <input type="text" class="form-control" placeholder="User Name" value="@user?.Username" name="username" disabled>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <h6 class="mb-0">First Name</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                    <input type="text" class="form-control" placeholder="First Name" value="@user?.Fname" name="Fname">
+                </div>
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <h6 class="mb-0">Last Name</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                    <input type="text" class="form-control" placeholder="Last Name" value="@user?.Lname" name="Lname">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-3">
+                    <h6 class="mb-0">Email</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                    <input type="text" class="form-control" placeholder="Email" value="@user?.Email" name="email">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-3">
+                    <h6 class="mb-0">Phone</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                    <input type="text" class="form-control" placeholder="Phone Number" value="@user?.Pnumber" name="pnumber">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-3">
+                    <h6 class="mb-0">Address</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                    <input type="text" class="form-control" placeholder="Address" value="@user?.Address" name="Address">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-3">
+                    <h6 class="mb-0">Old Password</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                    <input type="password" class="form-control" placeholder="Old Password" name="oldPassword">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-3">
+                    <h6 class="mb-0">New Password</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                    <input type="password" class="form-control" placeholder="New Password" name="NewPassword">
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-3">
+                    <h6 class="mb-0">Rewrite New Password</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                    <input type="password" class="form-control" placeholder="Rewrite New Password" name="reNewPassword">
+                </div>
+            </div>
+            <hr>
+
+                <button class="btn btn-primary btn-lg" type="submit">Edit</button>
+
+        </div>
+    </div>
+</div>
+</form>

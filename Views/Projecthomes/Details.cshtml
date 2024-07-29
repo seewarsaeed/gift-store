@@ -1,0 +1,70 @@
+﻿@model GiftStore.Models.Projecthome
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container-fluid pt-4 px-4">
+    <div class="bg-light text-center rounded p-4">
+
+        <h1>Details</h1>
+
+        <div>
+            <hr />
+            <dl class="row align-items-center justify-content-center">
+                <dt class="col-sm-2">
+                    Image
+                </dt>
+                <dd class="col-sm-10">
+                    <img src="@Url.Content("~/Images/Logo/"+ Model.Logo)" asp-append-version="true" style="width:100px;height:100px;border-radius:20%;">
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Name)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Aboutus)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Aboutus.Id)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Background)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Background.Id)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Contactus)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Contactus.Id)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Footer)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Footer.Id)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Header)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Header.Id)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Testimonial)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Testimonial.Id)
+                </dd>
+            </dl>
+        </div>
+        <div>
+            <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+            <a asp-action="ManageWebsitePages" asp-controller="Admin"> Back to List</a>
+        </div>
+    </div>
+</div>

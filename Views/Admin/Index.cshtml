@@ -1,0 +1,258 @@
+﻿@model List<Tuple<string, int, decimal, decimal>>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var pendingGiftMakers = ViewData["pendingGiftMakers"] as List<GiftStore.Models.Projectcategoryuser>;
+    var categoryUser = ViewData["categoryUser"] as List<GiftStore.Models.Projectcategoryuser>;
+    var pendingTestimonial = ViewData["pendingTestimonial"] as List<GiftStore.Models.Projecttestimonial>;
+}
+
+<!--  Statistics on the number of registered users, number of gifts and number of categories Start -->
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-sm-6 col-xl-3">
+            <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+                <div class="ms-3">
+                    <p class="mb-2">Number of User</p>
+                    <h6 class="mb-0">@ViewBag.UserCount</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xl-3">
+            <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+                <div class="ms-3">
+                    <p class="mb-2">Number of Gifts</p>
+                    <h6 class="mb-0">@ViewBag.GiftCount</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xl-3">
+            <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+                <div class="ms-3">
+                    <p class="mb-2">Number of Categories</p>
+                    <h6 class="mb-0">@ViewBag.CategoryCount</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xl-3">
+            <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+                <div class="ms-3">
+                    <p class="mb-2">Total Profits</p>
+                    <h6 class="mb-0">@ViewBag?.totalProfits</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  Statistics on the number of registered users, number of gifts and number of categories. End -->
+<!--  Accept or reject registered gifts maker Start -->
+<div class="container-fluid pt-4 px-4">
+    <div class="bg-light text-center rounded p-4">
+        <div class="d-flex align-items-center justify-content-between mb-4">
+            <h6 class="mb-0">Pending Gift Makers</h6>
+            <a asp-action="Index" asp-controller="Projectusers">Show All Website Users</a>
+        </div>
+        @if (pendingGiftMakers != null && pendingGiftMakers.Any())
+        {
+            <div class="table-responsive">
+                <table class="table text-start align-middle table-bordered table-hover mb-0">
+                    <thead>
+                        <tr class="text-dark">
+                            <th>Fname</th>
+                            <th>Lname</th>
+                            <th>Email</th>
+                            <th>Phone Number</th>
+                            <th>Address</th>
+                            <th>Category Name</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in pendingGiftMakers)
+                        {
+
+                            <tr>
+                                <td>@item.User?.Fname</td>
+                                <td>@item.User?.Lname</td>
+                                <td>@item.User?.Email</td>
+                                <td>@item.User?.Pnumber</td>
+                                <td>@item.User?.Address</td>
+                                <td>
+                                    @item.Category?.Name
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#Accept">Accept</button>
+                                    <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#Reject">Reject</button>
+                                    @* Accept Modal*@
+                                    <div class="modal fade" id="Accept" tabindex="-1" role="dialog" aria-labelledby="acceptModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="acceptModalLabel">Accept </h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Are you sure you want to accept this user?
+                                                    Once accepted, the user will become an active member of our team. Please ensure that you have reviewed their details and qualifications before proceeding.
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <a class="btn btn-primary" asp-action="AcceptGiftMaker" asp-controller="Admin" asp-route-id="@item.Id">Accept</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @* Reject Modal*@
+                                    <div class="modal fade" id="Reject" tabindex="-1" role="dialog" aria-labelledby="rejectModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="rejecteModalLabel">Reject </h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Are you sure you want to reject this user? Once rejected, the user's attempt to join our team will be declined. Please make sure you have thoroughly reviewed their details and qualifications before proceeding with rejection.
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <a class="btn btn-primary" asp-action="RejectGiftMaker" asp-controller="Admin" asp-route-id="@item.Id">Reject</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-light mb-0" role="alert">
+                There are no pending gift requests from Gift Makers at the moment.
+            </div>
+        }
+
+
+        <!-- Button trigger modal -->
+        <!-- Modal -->
+
+    </div>
+</div>
+<!--  Accept or reject registered gifts maker End -->
+<!--  Accept or reject Tesetimonial Start -->
+<div class="container-fluid pt-4 px-4">
+    <div class="bg-light text-center rounded p-4">
+        <div class="d-flex align-items-center justify-content-between mb-4">
+            <h6 class="mb-0">Pending Testimonials</h6>
+        </div>
+        @if (pendingTestimonial != null && pendingTestimonial.Any())
+        {
+            <div class="table-responsive">
+                <table class="table text-start align-middle table-bordered table-hover mb-0">
+                    <thead>
+                        <tr class="text-dark">
+                            <th>UserName</th>
+                            <th>Description</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in pendingTestimonial)
+                        {
+
+                            <tr>
+                                <td>@item.User?.Username</td>
+                                <td>@item.Description</td>
+                                <td>
+                                    <a class="btn btn-sm btn-primary" asp-action="acceptTestimonail" asp-controller="Admin" asp-route-id="@item.Id">Accept</a>
+                                    <a class="btn btn-sm btn-danger" asp-action="rejectTestimonail" asp-controller="Admin" asp-route-id="@item.Id">Reject</a>
+                                </td>
+                            </tr>
+
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-light mb-0" role="alert">
+                There are no pending testimonail requests from users at the moment.
+            </div>
+        }
+
+
+        <!-- Button trigger modal -->
+        <!-- Modal -->
+
+    </div>
+</div>
+<!--  Accept or reject Tesetimonial End -->
+<!--  Report Start -->
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-sm-12 col-xl-6">
+            <div class="bg-light text-center rounded p-4">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h6 class="mb-0">
+                        Profits - Table
+                    </h6>
+                    <a asp-action="FinancialReports" asp-controller="Admin">Financial Reports </a>
+                </div>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Gift Name</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Sold Quantity</th>
+                            <th scope="col">Profits</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var gift in Model)
+                        {
+                            <tr>
+                                <td>@gift.Item1</td>
+                                <td>@gift.Item3</td>
+                                <td>@gift.Item2</td>
+                                <td>@gift.Item4</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-sm-12 col-xl-6">
+            <div class="bg-light text-center rounded p-4">
+                <h6 class="mb-4">Categroy User - Table</h6>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">User Name</th>
+                            <th scope="col">Category Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in categoryUser)
+                        {
+                            <tr>
+                                <td>@item.User?.Username</td>
+                                <td>@item.Category?.Name</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  Report End -->

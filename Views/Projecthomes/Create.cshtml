@@ -1,0 +1,63 @@
+﻿@model GiftStore.Models.Projecthome
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container-fluid pt-4 px-4">
+    <div class="bg-light text-center rounded p-4">
+
+        <h1>Create</h1>
+
+        <hr />
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-4">
+                <form asp-action="Create" enctype="multipart/form-data">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="ImageFile" class="control-label"></label>
+                        <input asp-for="ImageFile" class="form-control" />
+                        <span asp-validation-for="ImageFile" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Name" class="control-label"></label>
+                        <input asp-for="Name" class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Backgroundid" class="control-label"></label>
+                        <select asp-for="Backgroundid" class="form-control" asp-items="ViewBag.Backgroundid"></select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Contactusid" class="control-label"></label>
+                        <select asp-for="Contactusid" class="form-control" asp-items="ViewBag.Contactusid"></select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Headerid" class="control-label"></label>
+                        <select asp-for="Headerid" class="form-control" asp-items="ViewBag.Headerid"></select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Aboutusid" class="control-label"></label>
+                        <select asp-for="Aboutusid" class="form-control" asp-items="ViewBag.Aboutusid"></select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Footerid" class="control-label"></label>
+                        <select asp-for="Footerid" class="form-control" asp-items="ViewBag.Footerid"></select>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Testimonialid" class="control-label"></label>
+                        <select asp-for="Testimonialid" class="form-control" asp-items="ViewBag.Testimonialid"></select>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div>
+            <a asp-action="ManageWebsitePages" asp-controller="Admin">Back to List</a>
+        </div>
+
+    </div>
+</div>

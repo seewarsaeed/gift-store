@@ -1,0 +1,27 @@
+﻿@model GiftStore.Models.Projectheader
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container-fluid pt-4 px-4">
+    <div class="bg-light text-center rounded p-4">
+        <h1>Details</h1>
+
+        <div>
+            <hr />
+            <dl class="row align-items-center justify-content-center">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(Model=>Model.Name)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
+            </dl>
+        </div>
+        <div>
+            <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+            <a asp-action="ManageWebsitePages" asp-controller="Admin">Back to List</a>
+        </div>
+    </div>
+</div>

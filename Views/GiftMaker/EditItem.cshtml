@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewData["Title"] = "EditItem";
+    Layout = "~/Views/Shared/_LayoutMaker.cshtml";
+    var gift = ViewData["gift"] as GiftStore.Models.Projectgift;
+}
+
+<div class="container row justify-content-center m-4 p-4">
+
+    <div class="col-lg-12">
+        <form class="form-contact contact_form" enctype="multipart/form-data" asp-action="EditItem" asp-controller="GiftMaker" > 
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input class="form-control" type="number" name="id" value="@gift?.Id" hidden>
+                        <input class="form-control" type="text" name="Name" value="@gift?.Name" placeholder="Gift Name">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input class="form-control" type="number" name="Price" value="@gift?.Price" placeholder="Gift Price">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group">
+                        <textarea class="form-control w-100"  type="text" name="Description" value="@gift?.Description" cols="30" rows="9" placeholder="Gift Description"></textarea>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group">
+                        <img src="@Url.Content("~/Images/GiftImages/"+ gift?.Image)" asp-append-version="true" class="img-fluid">
+                    </div>
+                </div>
+                <div class=" col-sm-4 ">
+                    <div class=" form-group">
+                        <input class="form-control" name="ImageFile" type="file">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group mt-3">
+                <button type="submit" class="btn_3 button-contactForm">Edit</button>
+                <a asp-action="Gifts" asp-controller="GiftMaker" class="btn_3 button-contactForm">Back</a>
+            </div>
+        </form>
+    </div>
+</div>
+

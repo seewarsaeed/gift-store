@@ -1,0 +1,160 @@
+﻿@model List<UserGiftPresentStatusClass>
+@{
+    ViewData["Title"] = "Notification";
+    Layout = "~/Views/Shared/_LayoutMaker.cshtml";
+}
+
+<div class="container-fluid section_padding p-4">
+    <div class="bg-light rounded p-4">
+        <h6 class="mb-4">Gifts Request - Table</h6>
+        @if (!string.IsNullOrEmpty(ViewData["Error"] as string))
+        {
+            <div class="alert alert-danger text-center" role="alert">@ViewData["Error"]</div>
+        }
+        @if (!string.IsNullOrEmpty(ViewData["Success"] as string))
+        {
+            <div class="alert alert-success text-center" role="alert">@ViewData["Success"]</div>
+        }
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Sender Name
+                    </th>
+                    <th>
+                        Gift
+                    </th>
+                    <th>
+                        Price
+                    </th>
+                    <th>
+                        Profits
+                    </th>
+                    <th>
+                        Date
+                    </th>
+                    <th>
+                        Receiver Address
+                    </th>
+                    <th>
+                        Request Status
+                    </th>
+                    <th>
+                        Payment Status
+                    </th>
+                    <th>
+                        Arrival Status
+                    </th>
+                    <th>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var present in Model)
+                {
+                    @if (present.NotificationStatus != "Read")
+                    {
+                        <tr class="table-active">
+                            <td>
+                                @present?.Username
+                            </td>
+                            <td>
+                                @present?.GiftName
+                            </td>
+                            <td>
+                                @present?.GiftPrice
+                            </td>
+                            <td>
+                            </td>
+                            @(present?.GiftPrice - present?.GiftPrice * 0.05m)
+
+                            <td>
+                                @present?.RequestDate
+                            </td>
+                            <td>
+                                @present?.ReciverAddress
+                            </td>
+                            <td>
+                                @if (present?.RequestStatus == "pending")
+                                {
+                                    <a asp-action="Deny" asp-controller="GiftMaker" asp-route-id="@present?.PresentId"><i class="fas fa-times"></i></a>
+                                    <a asp-action="Accept" asp-controller="GiftMaker" asp-route-id="@present?.PresentId"><i class="fas fa-check"></i></a>
+                                }
+                                else
+                                {
+                                    @present?.RequestStatus
+                                }
+                            </td>
+                            <td>
+                                @present?.PaidStatus
+                            </td>
+                            <td>
+                                @if (present?.ArrivedStatus == "pending")
+                                {
+                                    <a asp-action="Arrive" asp-controller="GiftMaker" asp-route-id="@present?.PresentId" class="genric-btn link-border radius">Arrive</a>
+                                }
+                                else
+                                {
+                                    @present?.ArrivedStatus
+                                }
+                            </td>
+                            <td>
+                                <a asp-action="read" asp-controller="GiftMaker" asp-route-id="@present?.PresentId" class="genric-btn link-border radius">Read</a>
+                            </td>
+                        </tr>
+                    }
+                    else
+                    {
+                        <tr>
+                            <td>
+                                @present?.Username
+                            </td>
+                            <td>
+                                @present?.GiftName
+                            </td>
+                            <td>
+                                @present?.GiftPrice
+                            </td>
+                            <td>
+                                @(present?.GiftPrice - present?.GiftPrice * 0.05m)
+                            </td>
+                            <td>
+                                @present?.RequestDate
+                            </td>
+                            <td>
+                                @present?.ReciverAddress
+                            </td>
+                            <td>
+                                @if (present?.RequestStatus == "pending")
+                                {
+                                    <a asp-action="Deny" asp-controller="GiftMaker" asp-route-id="@present?.PresentId"><i class="fas fa-times"></i></a>
+                                    <a asp-action="Accept" asp-controller="GiftMaker" asp-route-id="@present?.PresentId"><i class="fas fa-check"></i></a>
+                                }
+                                else
+                                {
+                                    @present?.RequestStatus
+                                }
+                            </td>
+                            <td>
+                                @present?.PaidStatus
+                            </td>
+                            <td>
+                                @if (present?.ArrivedStatus == "pending")
+                                {
+                                    <a asp-action="Arrive" asp-controller="GiftMaker" asp-route-id="@present?.PresentId" class="genric-btn link-border radius">Arrive</a>
+                                }
+                                else
+                                {
+                                    @present?.ArrivedStatus
+                                }
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+

@@ -1,0 +1,101 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutMaker.cshtml";
+    var Home = ViewData["Home"] as GiftStore.Models.Projecthome;
+    var Category = ViewData["Category"] as GiftStore.Models.Projectcategoryuser;
+    var Testimonial = ViewData["Testimonial"] as List<GiftStore.Models.Projecttestimonial>;
+
+}
+
+<div class="container m-4 p-4">
+    <div class="row align-items-center">
+        <div class="col">
+            <div class="banner_text_iner text-center">
+                <h1>
+                    @Home?.Header?.Name
+                </h1>
+                <p>
+                    @Home?.Background?.Description
+                </p>
+            </div>
+        </div>
+        <img src="@Url.Content("~/Images/BackgroundImages/"+Home?.Background?.Image)" alt="#" class="img-fluid">
+
+    </div>
+</div>
+<section class="single_product_list">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="single_product_iner">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="single_product_img">
+                                <img src="@Url.Content("~/Images/CategoryImages/"+Category?.Category?.Image)" style="width: 150pc;" class="img-fluid" alt="#">
+                                <img src="~/HomeAssets/img/product_overlay.png" class="product_overlay img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-sm-6">
+                            <div class="single_product_content">
+                                <h2>
+                                    @Category?.Category?.Name
+                                </h2>
+                                <p>
+                                    @Category?.Category?.Description
+
+                                </p>
+                                <a asp-action="Gifts" asp-controller="GiftMaker" class="btn_3">Add Your Gifts</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- client review part here -->
+<section class="client_review">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="client_review_slider owl-carousel">
+                    @foreach (var item in Testimonial)
+                    {
+                        <div class="single_client_review">
+                            <div class="client_img">
+                                <img src="@Url.Content("~/Images/UserImages/"+ item?.User?.Image)" alt="#">
+                            </div>
+                            <p>"@item?.Description"</p>
+                            <h5>- @item?.User?.Username</h5>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- client review part end -->
+<div class="footer_part">
+    <div class="footer_iner section_bg" style="padding: 0;">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-8">
+                    <div class="footer_menu">
+                        <div class="footer_logo">
+                            <a asp-action="Index" asp-controller="GiftMaker"> <img src="@Url.Content("~/Images/Logo/"+Home?.Logo)" style="width: 125px;" alt="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="social_icon">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
